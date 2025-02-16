@@ -36,9 +36,9 @@ $ curl localhost:3000/ping
 ### Plusieurs stages :
 
 ```console
-$ docker build -t single -f Dockerfile.2 .
+$ docker build -t multi -f Dockerfile.2 .
 
-$ docker run --rm --init -p 3000:3000 single
+$ docker run --rm --init -p 3000:3000 multi
 ```
 
 Vous pouvez maintenant utiliser l'API :
