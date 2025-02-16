@@ -10,19 +10,38 @@ Cette API expose un endpoint `/ping` qui retourne les headers de la requête HTT
 
 ## Usage
 
-Image Docker avec un seul stage :
+Avant tout, clonez le projet :
 
 ```console
 $ git clone https://github.com/geoffrey-diederichs/WIK-DPS-TP01.git
 
 $ cd WIK-DPS-TP02/
+```
 
+### Un seul stage :
+
+```console
 $ docker build -t single -f Dockerfile .
 
 $ docker run --rm --init -p 3000:3000 single
 ```
 
-You can now use the API :
+Vous pouvez maintenant utiliser l'API :
+
+```console
+$ curl localhost:3000/ping
+{"message":"Headers received","headers":{"host":"localhost:3000","user-agent":"curl/8.6.0","accept":"*/*"}}
+```
+
+### Plusieurs stages :
+
+```console
+$ docker build -t single -f Dockerfile.2 .
+
+$ docker run --rm --init -p 3000:3000 single
+```
+
+Vous pouvez maintenant utiliser l'API :
 
 ```console
 $ curl localhost:3000/ping
