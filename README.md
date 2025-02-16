@@ -48,7 +48,7 @@ $ curl localhost:3000/ping
 {"message":"Headers received","headers":{"host":"localhost:3000","user-agent":"curl/8.6.0","accept":"*/*"}}
 ```
 
-## API route
+## API routes
 
 - `GET /ping` : renvoie un `json` avec les headers de la requête envoyé.
 
