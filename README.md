@@ -13,7 +13,7 @@ Cette API expose un endpoint `/ping` qui retourne les headers de la requête HTT
 Avant tout, clonez le projet :
 
 ```console
-$ git clone https://github.com/geoffrey-diederichs/WIK-DPS-TP01.git
+$ git clone https://github.com/geoffrey-diederichs/WIK-DPS-TP02.git
 
 $ cd WIK-DPS-TP02/
 ```
